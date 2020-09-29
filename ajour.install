@@ -1,0 +1,6 @@
+pre_install(){
+	ls -1qA /usr/share/vulkan/icd.d/ | grep -q . || (echo "	Vulkan drivers not found" && echo "	Install them before running (see https://wiki.archlinux.org/index.php/Vulkan)")
+}
+
+
+
